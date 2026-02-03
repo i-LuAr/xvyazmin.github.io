@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mis XV Años | Yazmín</title>
+    <meta
+      name="description"
+      content="Invitación a los XV años de Yazmín. Fecha, lugar, itinerario y confirmación."
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#inicio">XV</a>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          ☰
+        </button>
+
+        <ul class="nav__list" id="menu">
+          <li><a href="#detalles">Detalles</a></li>
+          <li><a href="#itinerario">Itinerario</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#rsvp">Confirmar</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <!-- HERO / PORTADA -->
+      <section class="hero">
+        <div class="container hero__content">
+          <p class="hero__kicker">Estás invitado(a) a</p>
+          <h1 class="hero__title">Mis XV Años</h1>
+          <p class="hero__name">Citlalli Yazmín Lepe de la Cruz</p>
+
+          <div class="hero__meta">
+            <p><strong>Fecha:</strong> 11 Abril 2026</p>
+            <p><strong>Hora:</strong> 8:00 PM en Terraza Real Andrea</p>
+          </div>
+<p class="ya_casi">¡NOS VEMOS EN!</p>
+          <!-- Contador -->
+          <div class="countdown" aria-label="Cuenta regresiva">
+            <div class="countdown__item">
+              <span class="countdown__num" id="dd">--</span>
+              <span class="countdown__label">Días</span>
+            </div>
+            <div class="countdown__item">
+              <span class="countdown__num" id="hh">--</span>
+              <span class="countdown__label">Horas</span>
+            </div>
+            <div class="countdown__item">
+              <span class="countdown__num" id="mm">--</span>
+              <span class="countdown__label">Min</span>
+            </div>
+            <div class="countdown__item">
+              <span class="countdown__num" id="ss">--</span>
+              <span class="countdown__label">Seg</span>
+            </div>
+          </div>
+          <div class="hero__cta">
+            <a class="btn" href="#rsvp">Confirmar asistencia</a>
+            <a class="btn btn--ghost" href="#detalles">Ver detalles</a>
+          </div>
+        </div>
+      </section>
+
+<!-- DETALLES -->
+<section id="detalles" class="section">
+  <div class="container">
+    <h2>Detalles del evento</h2>
+
+    <div class="grid grid--2">
+      <article class="card">
+        <h3>Misa</h3>
+        <p><strong>Lugar:</strong> Parroquia San Jose Esposo de Maria</p>
+        <p><strong>Dirección:</strong> C. Zapotlán 1868, Benito Juárez, 45199 Zapopan, Jal.</p>
+        <p><strong>Hora:</strong> 6:00 PM</p>
+      </article>
+
+      <article class="card">
+        <h3>Recepción</h3>
+        <p><strong>Lugar:</strong> Terraza Real Andrea</p>
+        <p><strong>Dirección:</strong> C. Zapotlán 1918, Benito Juárez, 45199 Zapopan, Jal.</p>
+        <p><strong>Hora:</strong> 8:00 PM</p>
+      </article>
+    </div>
+
+    <div class="note">
+      <p><strong>Código de vestimenta:</strong> [Formal / Etiqueta / Cocktail]</p>
+      <p><strong>Mensaje:</strong> [Soy guapo, lo sé]</p>
+    </div>    
+  </div>
+</section>
+
+<!-- ITINERARIO -->
+<section id="itinerario" class="section">
+  <div class="container">
+    <h2>Itinerario</h2>
+
+    <ol class="timeline">
+      <li class="timeline__item">
+        <span class="timeline__time">6:00 PM</span>
+        <span class="timeline__text">Misa</span>
+      </li>
+      <li class="timeline__item">
+        <span class="timeline__time">8:00 PM</span>
+        <span class="timeline__text">Recepción y fiesta</span>
+      </li>
+      <li class="timeline__item">
+        <span class="timeline__time">1:00 AM</span>
+        <span class="timeline__text">Cierre del evento</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+      <!-- GALERÍA -->
+      <section id="galeria" class="section">
+        <div class="container">
+          <h2>Galería</h2>
+
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img src="assets/img/foto1.jpg" alt="Foto 1" loading="lazy" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="assets/img/foto2.jpg" alt="Foto 2" loading="lazy" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="assets/img/foto3.jpg" alt="Foto 3" loading="lazy" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="assets/img/foto4.jpg" alt="Foto 4" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- RSVP -->
+      <section id="rsvp" class="section">
+        <div class="container">
+          <h2>Confirmación (RSVP)</h2>
+
+          <div class="grid grid--2">
+            <div class="card">
+              <p>Por favor confirma tu asistencia antes del <strong>31 de Marzo 2026</strong>.</p>
+              <ul class="list">
+                <li><strong>Tel/WhatsApp:</strong> [+52 ...]</li>
+                <li><strong>Nombre de contacto:</strong> [Papás / Encargado]</li>
+              </ul>
+
+              <a
+                class="btn"
+                href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%20XV%20de%20Yazm%C3%ADn"
+                target="_blank"
+                rel="noopener"
+              >
+                Confirmar por WhatsApp
+              </a>
+            </div>
+
+            <div class="card">
+              <h3>Notas</h3>
+              <p><strong>Mesa de regalos:</strong> Sobre con lana </p>
+              <p><strong>Restricciones:</strong> [No niños groseros]</p>
+              <p><strong>Hashtag:</strong> #QueChingueSuMadreLa4T</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- UBICACIÓN -->
+      <section id="ubicacion" class="section">
+        <div class="container">
+          <h2>Ubicación</h2>
+
+          <!-- Wrapper para hacerlo responsive con CSS -->
+          <div class="map-embed card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2638.4884479654415!2d-103.33848818767908!3d20.73513729014764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b03ef8095fbd%3A0xbfadca1ad82d19f8!2sTerraza%20Real%20Andrea!5e0!3m2!1ses-419!2smx!4v1768707242648!5m2!1ses-419!2smx"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa: Terraza Real Andrea"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Mis XV Años | Yazmín</small>
+      </div>
+    </footer>
+
+<script>
+// Menú móvil (simple)
+  const btn = document.querySelector(".nav__toggle");
+  const menu = document.getElementById("menu");
+  btn?.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", String(isOpen));
+  });
+
+// Año en footer
+document.getElementById("year").textContent = String(new Date().getFullYear());
+
+// ========= CONTADOR =========
+// 11 de Abril de 2026 a las 6:00 PM (hora local del dispositivo)
+// monthIndex: abril = 3
+const targetDate = new Date(2026, 3, 11, 18, 0, 0);
+
+const elDD = document.getElementById("dd");
+const elHH = document.getElementById("hh");
+const elMM = document.getElementById("mm");
+const elSS = document.getElementById("ss");
+
+function pad2(n) {
+  return String(n).padStart(2, "0");
+}
+
+let timerId = null;
+
+function updateCountdown() {
+  const now = new Date();
+  const diffMs = targetDate - now;
+
+  if (diffMs <= 0) {
+    elDD.textContent = "00";
+    elHH.textContent = "00";
+    elMM.textContent = "00";
+    elSS.textContent = "00";
+    if (timerId !== null) clearInterval(timerId);
+    return;
+  }
+
+  const totalSeconds = Math.floor(diffMs / 1000);
+  const days = Math.floor(totalSeconds / 86400);
+  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  elDD.textContent = String(days);
+  elHH.textContent = pad2(hours);
+  elMM.textContent = pad2(minutes);
+  elSS.textContent = pad2(seconds);
+}
+
+updateCountdown();
+timerId = setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>
